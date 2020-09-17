@@ -1,5 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+//Task CT-01
+import styled from "styled-components";
 
 export default function Home() {
   return (
@@ -10,6 +12,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        {/* Task CT-01 */}
+        <div>
+          <Title>Example Title Styled-Components</Title>
+        </div>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -62,3 +68,8 @@ export default function Home() {
     </div>
   );
 }
+
+//Task CT-01
+const Title = styled.h1`
+  color: red;
+`;
