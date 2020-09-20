@@ -8,8 +8,7 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint",
-    "test": "jest "
+    "lint": "eslint"
   },
   "dependencies": {
     "husky": "^4.3.0",
@@ -42,6 +41,7 @@
   },
   "husky": {
     "hooks": {
+      "_comment": "TO-DO: Add yarn test for husky pre-commit functionality",
       "pre-commit": "yarn lint",
       "commit-msg": "echo \"commit-msg hook from Husky\" && echo $HUSKY_GIT_PARAMS > hook-params"
     }
