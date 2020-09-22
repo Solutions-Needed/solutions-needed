@@ -58,7 +58,6 @@
   },
   "husky": {
     "hooks": {
-      "_comment": "TO-DO: Add yarn test for husky pre-commit functionality",
       "pre-commit": "yarn lint && yarn test",
       "commit-msg": "echo \"commit-msg hook from Husky\" && echo $HUSKY_GIT_PARAMS > hook-params"
     }
