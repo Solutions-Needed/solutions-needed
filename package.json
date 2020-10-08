@@ -9,10 +9,12 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint",
+    "test": "jest",
     "cypress": "cypress open"
   },
   "dependencies": {
     "husky": "^4.3.0",
+    "jsdom-global": "^3.0.2",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -24,6 +26,10 @@
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/react": "^6.0.21",
+    "@testing-library/dom": "^7.24.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.11.1",
     "cypress": "^5.2.0",
@@ -35,16 +41,34 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
+    "jest": "^26.4.2",
+    "jest-dom": "^4.0.0",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.1",
     "react-is": "^16.13.1",
     "tailwindcss": "^1.8.10"
   },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/jspm_packages"
+    ],
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
+  },
   "husky": {
     "hooks": {
-      "_comment": "TO-DO: Add yarn test for husky pre-commit functionality",
-      "pre-commit": "yarn lint",
+      "pre-commit": "yarn lint && yarn test",
       "commit-msg": "echo \"commit-msg hook from Husky\" && echo $HUSKY_GIT_PARAMS > hook-params"
     }
   }
