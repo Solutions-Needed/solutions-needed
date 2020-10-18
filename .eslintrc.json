@@ -1,5 +1,6 @@
 {
   "env": {
+    "node": true,
     "browser": true,
     "es2021": true,
     "jest": true
@@ -24,13 +25,29 @@
         "extensions": [".js", ".jsx"]
       }
     ],
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "no-console": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "react/forbid-prop-types": 0,
+    "import/no-named-as-default": 0,
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "invalidHref", "preferButton" ]
+    }],
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     // suppress errors for missing 'import React' in files
     "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "en": {
+    "translation": {
+      "FIND_SOLUTION_LABEL": "What is the problem you are looking for solution?",
+      "FIND_SOLUTION_DESC": "Post the problem, the comunity are going to help you to find a solution",
+      "POST_PROBLEM_BTN": "Post",
+      "SIDE_MENU_TITLE": "Categorias",
+      "COMING_SOON_TITLE": "Coming Soon!"
+    }
+  },
+  "es": {
+    "translation": {
+      "FIND_SOLUTION_LABEL": "¿A qué problema buscas solución?",
+      "FIND_SOLUTION_DESC": "Postea tu problema para que la comunidad te ayude a encontrar la solución que necesitas",
+      "POST_PROBLEM_BTN": "Postear",
+      "SIDE_MENU_TITLE": "Categorias",
+      "COMING_SOON_TITLE": "Pronto!"
+    }
+  }
+}
