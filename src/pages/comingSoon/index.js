@@ -1,9 +1,10 @@
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import Theme from '../../styles/Theme';
 
 const ComingSoonTitle = styled.h1`
   font-size: 75px;
-  color: black;
+  color: ${(props) => props.theme.colors.primary};
   text-align: center;
   padding: 100px;
 `;
@@ -18,10 +19,12 @@ const LogoImg = styled.img`
 const ComingSoonPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="py-20">
-      <LogoImg src="/SolutionsNeededLogo.png" alt="Logo" />
-      <ComingSoonTitle>{t('COMING_SOON_TITLE')}</ComingSoonTitle>
-    </div>
+    <ThemeProvider theme={Theme}>
+      <div className="py-20">
+        <LogoImg src="/assets/images/SolutionsNeededLogo.png" alt="Logo" />
+        <ComingSoonTitle>{t('COMING_SOON_TITLE')}</ComingSoonTitle>
+      </div>
+    </ThemeProvider>
   );
 };
 
