@@ -5,7 +5,9 @@
       "FIND_SOLUTION_DESC": "Post the problem, the comunity are going to help you to find a solution",
       "POST_PROBLEM_BTN": "Post",
       "SIDE_MENU_TITLE": "Categorias",
-      "COMING_SOON_TITLE": "Coming Soon!"
+      "COMING_SOON_TITLE": "Coming Soon!",
+      "MAIN_NAV_ABOUT_LABEL": "About this project",
+      "MAIN_NAV_CODE_LABEL": "Code of conduct"
     }
   },
   "es": {
@@ -14,7 +16,10 @@
       "FIND_SOLUTION_DESC": "Postea tu problema para que la comunidad te ayude a encontrar la solución que necesitas",
       "POST_PROBLEM_BTN": "Postear",
       "SIDE_MENU_TITLE": "Categorias",
-      "COMING_SOON_TITLE": "Pronto!"
-    }
+      "COMING_SOON_TITLE": "Pronto!",
+      "MAIN_NAV_ABOUT_LABEL": "Acerca del proyecto",
+      "MAIN_NAV_CODE_LABEL": "Código de conducta"
+      }
+
   }
 }
