@@ -13,6 +13,8 @@
     "cypress": "cypress open"
   },
   "dependencies": {
+    "@sentry/react": "^5.27.1",
+    "@sentry/tracing": "^5.27.1",
     "husky": "^4.3.0",
     "i18next": "^19.8.2",
     "jsdom-global": "^3.0.2",
