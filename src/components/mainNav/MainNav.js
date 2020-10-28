@@ -14,13 +14,19 @@ const links = () => {
 };
 
 const LogoImg = styled.img`
-  width: 300px;
+  width: 150px;
   height: auto;
 `;
 
 const StyledUl = styled.ul`
   display: flex;
   align-items: center;
+`;
+
+const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const MyLogo = () => {
@@ -34,12 +40,12 @@ const MyLogo = () => {
 export default function Nav() {
   const links2 = links();
   return (
-    <div className="grid grid-cols-3 gap-4 justify-items-stretch h-65 p-5">
-      <div />
-      <span className="flex justify-center">
+    <StyledDiv>
+      <span>
         <MyLogo />
       </span>
-      <span className="flex justify-end ">
+      <span />
+      <span>
         <StyledUl>
           {links2.map(({ href, label }) => (
             <li className="p-5" key={`${href}${label}`}>
@@ -48,6 +54,6 @@ export default function Nav() {
           ))}
         </StyledUl>
       </span>
-    </div>
+    </StyledDiv>
   );
 }
