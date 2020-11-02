@@ -1,5 +1,5 @@
-import MainNav from '../components/mainNav';
-import Footer from '../components/Footer';
+import MainNav from '../mainNav';
+import Footer from '../Footer';
 
 const Layout = ({ children }) => {
   return (
