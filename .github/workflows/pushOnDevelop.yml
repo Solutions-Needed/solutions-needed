@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: pushOnDevelop
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the develop branch
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: install dependencies
+        run: yarn install
+
+      - name: build site
+        run: yarn build
+
+      - name: Execute tests
+        run: yarn test
+
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.DEV_NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.DEV_NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=build --develop
+          secrets: '["DEV_NETLIFY_AUTH_TOKEN", "DEV_NETLIFY_SITE_ID"]'
