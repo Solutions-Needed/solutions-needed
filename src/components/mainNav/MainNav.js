@@ -9,7 +9,7 @@ const links = () => {
       href: 'https://github.com/vercel/next.js',
       label: t('MAIN_NAV_CODE_LABEL'),
     },
-    { href: 'https://nextjs.org/docs', label: t('MAIN_NAV_ABOUT_LABEL') },
+    { href: '/aboutPage', label: t('MAIN_NAV_ABOUT_LABEL') },
   ];
 };
 
