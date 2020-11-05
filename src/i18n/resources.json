@@ -7,7 +7,12 @@
       "SIDE_MENU_TITLE": "Categorias",
       "COMING_SOON_TITLE": "Coming Soon!",
       "MAIN_NAV_ABOUT_LABEL": "About this project",
-      "MAIN_NAV_CODE_LABEL": "Code of conduct"
+      "MAIN_NAV_CODE_LABEL": "Code of conduct",
+      "CODE_TITLE": "Code of conduct",
+      "CODE_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "ABOUT_PAGE_TITLE": "About this project",
+      "ABOUT_PAGE_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "PROJECT_LINK": "Link to project´s repository"
     }
   },
   "es": {
@@ -18,7 +23,12 @@
       "SIDE_MENU_TITLE": "Categorias",
       "COMING_SOON_TITLE": "Pronto!",
       "MAIN_NAV_ABOUT_LABEL": "Acerca del proyecto",
-      "MAIN_NAV_CODE_LABEL": "Código de conducta"
+      "MAIN_NAV_CODE_LABEL": "Código de conducta",
+      "CODE_TITLE": "Código de conducta",
+      "CODE_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "ABOUT_PAGE_TITLE": "Acerca del proyecto",
+      "ABOUT_PAGE_CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "PROJECT_LINK": "Enlace al repositorio del proyecto"
       }
 
   }
