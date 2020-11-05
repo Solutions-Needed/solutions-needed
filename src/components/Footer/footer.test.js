@@ -11,6 +11,8 @@ describe('Footer test', () => {
         <Footer />
       </I18nextProvider>
     );
-    expect(getByText('With ❤ for Solutions Needed Team')).toBeDefined();
+    expect(
+      getByText('❤ con amor por el equipo de Solutions Needed')
+    ).toBeDefined();
   });
 });

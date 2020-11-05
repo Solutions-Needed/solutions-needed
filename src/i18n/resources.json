@@ -7,7 +7,8 @@
       "SIDE_MENU_TITLE": "Categorias",
       "COMING_SOON_TITLE": "Coming Soon!",
       "MAIN_NAV_ABOUT_LABEL": "About this project",
-      "MAIN_NAV_CODE_LABEL": "Code of conduct"
+      "MAIN_NAV_CODE_LABEL": "Code of conduct",
+      "FOOTER_TITLE": "❤ with love by Solutions Needed Team"
     }
   },
   "es": {
@@ -18,8 +19,8 @@
       "SIDE_MENU_TITLE": "Categorias",
       "COMING_SOON_TITLE": "Pronto!",
       "MAIN_NAV_ABOUT_LABEL": "Acerca del proyecto",
-      "MAIN_NAV_CODE_LABEL": "Código de conducta"
-      }
-
+      "MAIN_NAV_CODE_LABEL": "Código de conducta",
+      "FOOTER_TITLE": "❤ con amor por el equipo de Solutions Needed"
+    }
   }
 }
