@@ -1,15 +1,15 @@
-import PropTypes from 'prop-types';
+import React from 'react';
+import App from 'next/app';
 import 'styles/styles.css';
 import 'i18n';
 
-function MyApp({ Component, pageProps }) {
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+class MyApp extends App {
+  render() {
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    const { Component, pageProps, router } = this.props;
+    const getMainLayout = Component.getMainLayout || ((page) => page);
+    return getMainLayout(<Component {...pageProps}></Component>);
+  }
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.func.isRequired,
-  pageProps: PropTypes.object.isRequired,
-};
 
 export default MyApp;
