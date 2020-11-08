@@ -6,10 +6,10 @@ const links = () => {
   const { t } = useTranslation();
   return [
     {
-      href: 'https://github.com/vercel/next.js',
+      href: '/codeOfConduct',
       label: t('MAIN_NAV_CODE_LABEL'),
     },
-    { href: 'https://nextjs.org/docs', label: t('MAIN_NAV_ABOUT_LABEL') },
+    { href: '/aboutPage', label: t('MAIN_NAV_ABOUT_LABEL') },
   ];
 };
 
